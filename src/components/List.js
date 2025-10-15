@@ -16,7 +16,7 @@ const List = () => {
           .map(issue => (
             <View key={issue.id} style={[styles.issueItem, issue.assigned && issue.assigned.toLowerCase() === 'katerina larson' ? styles.katerina : styles.other]}>
               <Text>
-                <Text style={styles.propName}>Id: </Text>
+                <Text style={styles.propName}>ID: </Text>
                 {extractId(issue.id)}
               </Text>
               <Text>
