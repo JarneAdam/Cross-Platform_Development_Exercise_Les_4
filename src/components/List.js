@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { issues } from '../../issues';
 import Title from './Title';
+import theme from '../theme';
 
 const List = () => {
   const extractId = (id) => id.substr(3);
@@ -37,20 +38,20 @@ const List = () => {
 const styles = StyleSheet.create({
   issueItem: {
     borderBottomWidth: 1,
-    borderBottomColor: 'black',
+    borderBottomColor: theme.COLOR_BORDER,
     borderStyle: 'solid',
-    marginBottom: 5,
-    paddingVertical: 4,
-    paddingHorizontal: 6,
+    marginBottom: theme.SPACING_MB,
+    paddingVertical: theme.PADDING_VERTICAL,
+    paddingHorizontal: theme.PADDING_HORIZONTAL,
   },
   propName: {
-    fontWeight: '600'
+    fontWeight: theme.FONT_WEIGHT_SEMI
   },
   katerina: {
-    backgroundColor: 'rgba(243,183,183,0.39)'
+    backgroundColor: theme.COLOR_KATERINA_BG
   },
   other: {
-    backgroundColor: 'rgba(147,147,210,0.55)'
+    backgroundColor: theme.COLOR_OTHER_BG
   }
 });
 
